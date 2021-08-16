@@ -6,7 +6,7 @@ project.ext {
     // compile '<groupId>:<artifactId>:<libVersion>'
     groupId = 'com.github.leeonardoo' // package name of the project
     artifactId = "ExpandableTextView" // module name of the library
-    libVersion = "1.1.0"
+    libVersion = "1.1.1"
 }
 version = project.libVersion
 group = project.groupId

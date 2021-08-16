@@ -8,6 +8,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.text.Spannable;
 import android.text.TextUtils;
+import android.text.method.MovementMethod;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -474,6 +475,14 @@ public class ExpandableTextView extends LinearLayout implements View.OnClickList
 
     public void setOnStateChangeListener(OnStateChangeListener onStateChangeListener) {
         this.onStateChangeListener = onStateChangeListener;
+    }
+
+    public void setMovementMethod(MovementMethod movementMethod) {
+        textView.setMovementMethod(movementMethod);
+    }
+
+    public TextView getTextView() {
+        return textView;
     }
 
     public interface OnStateChangeListener {
